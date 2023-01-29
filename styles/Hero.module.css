@@ -1,0 +1,134 @@
+.container{
+    display: flex;
+    position:relative;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:2rem
+}
+.cherryDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: var(--pink);
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    color: var(--themeRed);
+    font-weight: bold;
+}
+
+.cherryDiv:hover{
+    transform: scale(1.3);
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.miniText{
+    width: 70%;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.btn{
+    padding: 1rem 2.5rem;
+}
+.btn:hover
+{
+    transform: scale(1.3);
+}
+
+.right{
+    position: relative;
+}
+
+.imageContainer{
+    width: 500px;
+    position:absolute;
+    top: -1rem;
+    left: 20rem;
+}
+
+.imageContainer:hover{
+    transform: scale(1.2);
+}
+
+
+.ContactUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width:max-content;
+    padding: 1rem;
+    border-radius: 5rem;
+    top: 6rem;
+    left: 3rem;
+    gap:1rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    color: var(--themeRed);
+}
+
+.ContactUs>div{
+    background: rgb(59, 208, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:2.5rem;
+    border-radius: 50%;
+    height: 2.5rem;
+    font-weight: bold;
+}
+
+.ContactUs>span{
+    font-weight: bold;
+}
+.ContactUs:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.Pizza{
+    display: flex;
+    gap:1rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 10rem;
+    left: 8rem;
+    width: max-content;
+   
+
+}
+
+.Pizza>:nth-child(1){
+    width: 6rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 5rem;
+}
+.Pizza>:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.Pizza:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+

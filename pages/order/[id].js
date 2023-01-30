@@ -4,7 +4,7 @@ import css from '../../styles/Order.module.css';
 import { UilBill, UilBox } from '@iconscout/react-unicons'
 import Cooking from '../../assets/cooking.png';
 import Onway from '../../assets/onway.png';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Spinner from '../../assets/spinner.svg';
 import { useEffect } from 'react';
 

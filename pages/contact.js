@@ -1,6 +1,6 @@
 import React from "react";
 import cheemsapp from "../assets/cheemsapp.jpg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import css from "../styles/Contact.module.css";
 const Contact = () => {
     return (

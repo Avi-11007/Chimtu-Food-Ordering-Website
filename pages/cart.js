@@ -2,7 +2,7 @@ import { useStore } from "../store/store";
 import Layout from "../components/Layout";
 import css from "../styles/Cart.module.css"
 import { urlFor } from "../lib/client";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import toast, { Toaster } from "react-hot-toast";
 import OrderModel from "../components/OrderModal";
 import { useState } from "react";

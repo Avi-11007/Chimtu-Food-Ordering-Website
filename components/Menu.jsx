@@ -1,5 +1,5 @@
 import { urlFor } from "../lib/client"
-import Image from "next/image"
+import Image from "next/legacy/image";
 import Link from "next/link"
 import css from "../styles/Menu.module.css"
 export default function Menu({pizzas}) {
@@ -30,7 +30,8 @@ export default function Menu({pizzas}) {
                                     <Image loader={()=>src}
                                        src={src} alt=""
                                        objectFit="cover"
-                                       layout="fill"
+                                            layout="fill"
+                                            unoptimized="true"
                                     />
                                   </div>
                             </Link>      

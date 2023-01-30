@@ -1,8 +1,9 @@
 import Logo from '../assets/Logo.jpeg';
 import css from '../styles/Header.module.css';
-import Image from 'next/image';
-import {UilShoppingBag,UilReceipt} from '@iconscout/react-unicons';
-import  {useStore}  from '../store/store';
+import Image from "next/legacy/image";
+import { useStore } from '../store/store';
+import shoppingcart from "../assets/shoppingcart.png";
+import shoppingbag from "../assets/shopping_bag.png";
 import Link from 'next/link';
 import { useEffect,useState } from 'react';
 
@@ -36,7 +37,12 @@ export default function Header() {
          <div className={css.rightSide}>
          <Link href="/cart">
             <div className={css.cart}>
-            <UilShoppingBag size={35} color="#2E2E2E"/>
+                        <Image
+                            src={shoppingcart}
+                            alt=""
+                            width={50}
+                            height={50}
+                         />
               <div className={css.badge}>{items}</div>
             </div>
                 </Link>
@@ -45,7 +51,12 @@ export default function Header() {
                     Order && (
                         <Link href={`/order/${Order}`}>
                             <div className={css.cart}>
-                                <UilReceipt size={35} color="#2E2E2E" />
+                                <Image
+                                    src={shoppingbag}
+                                    alt=""
+                                    width={50}
+                                    height={50}
+                                />
                                 {Order != "" && <div className={css.badge}>1</div>}
                             </div>
 

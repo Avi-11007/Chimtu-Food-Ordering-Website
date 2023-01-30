@@ -29,7 +29,7 @@ export default function Hero(params) {
                 </div>
              
                  <span className={css.miniText}>
-                Our Mission is to fulfilling your tummy with delicious food and free Delievery
+                Our Mission is to fulfilling your tummy with yummy food and free Delievery ofcourse
                  </span>
 
                 <Link href="/pizza/red-chilli-pizza">
